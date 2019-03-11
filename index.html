@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS and JavaScript</title>
+    <script>
+        function init() {
+            me = {name: 'Judy', email: 'judy@karmoxie.com'}
+            var hobbies= ['Music', 'Reading']
+            ulStr = "<ul>";
+            var arrayLength = hobbies.length;
+            for (var i = 0; i < arrayLength; i++) {
+ //               ulStr = ulStr.concat('<li>');
+ //               ulStr = ulStr.concat(hobbies[i]);
+ //               ulStr = ulStr.concat('</li>');
+                ulStr += "<li>";
+                ulStr += hobbies[i];
+                ulStr += "</li>";
+            }
+            ulStr = ulStr.concat('</ul>');
+            document.getElementById("name").innerHTML = me.name;
+            document.getElementById("email").innerHTML = me.email;
+            document.getElementById("hobbies").innerHTML = ulStr;
+        }
+    </script>
+    <style>
+        div {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid green;
+            background-color: #EEEEEE;
+            color: green
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="hobbies"></div>
+</body>
+</html>
