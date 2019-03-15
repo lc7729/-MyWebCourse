@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        <!--input, textarea{display:block}; -->
+        label{display:block};
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+            <div style="white-space:nowrap"></div>
+            <label for "firstname">First Name *</label>
+            <input type="text" id="firstname">
+            </div>
+            <label>Last Name *
+                <input type="text" name="lastname">
+            </label>
+            <label>Date of Birth *
+                <input type="text" name="dob">
+            </label>   
+            <label>Email *
+                <input type="text" name="email">
+            </label>
+            <label>Password *
+                <input type="text" name="pwd">
+            </label>
+            <label>Repeat Password *
+                <input type="text" name="repeatPwd">
+            </label>
+            <label>You Github URL
+                <input type="text" name="githubUrl">
+            </label>
+            <label>Phone
+                <input type="text" name="phone">
+            </label>
+            <br>
+            <label>Shoesize
+                <input type="text" name="shoesize">
+            </label>
+            <label>Skill Levl (1 notive, 10 expert)
+                <input type="text" name="skillLevel">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Billing Address</legend>
+            <label for "address">Address *</label>
+            <textarea name="address"></textarea>
+            <label for "postcode">Postal code *</label>
+            <input type="text" id="postcode">
+            <label for "countryList">Country *</label>
+            <select id = "countryList">
+                <option value = "Country...">Country...</option>
+                <option value = "US">US</option>
+                <option value = "Argentina">Argentina</option>
+                <option value = "Brazil">Brazil</option>
+                <option value = "China">China</option>
+              </select>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <fieldset>
+                    <legend>Card Type</legend>
+                    <input type="radio" name="cardType" value = "VISA">VISA</input>
+                    <input type="radio" name="cardType" value = "Mastercard">Mastercard</input>
+                    <input type="radio" name="cardType" value = "AMEX">AMEX</input>
+            </fieldset>
+            <label for "nameOnCard">Name *</label>
+            <input type="text" id="nameOnCard">
+            <label for "cardNumber">Card number *</label>
+            <input type="text" id="cardNumber">
+            <label for "securityCode">Security code *</label>
+            <input type="text" id="securityCode">
+            <label for "expiryDate">Expiry Date *</label>
+            <input type="text" id="expiryDate">
+        </fieldset>
+
+        <button>Register</button>
+    </form>
+</body>
+</html>

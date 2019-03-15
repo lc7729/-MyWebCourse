@@ -30,3 +30,30 @@ for (let hobby of hobbies) {
     printHobby(hobby);
 }
 
+let band1 = {
+    name : "Pink Floyd",
+    city : "London" ,
+    country : "England",
+    yearFormed : 1965,
+    genres : ["Progressive rock", "psychedelic rock", "art rock"]
+}
+band1.genres = new Array("Progressive rock2", "psychedelic rock2", "art rock2");
+
+let band2 = new Object();
+band2.name = "Bee Gees";
+band2.city = "S";
+band2.country = "Sweden";
+band2.yearFormed = 1976;
+band2.genres = ["Soft rock", "Pop music"];
+
+let bands = [band1, band2];
+
+function printBands(bands) {
+    bands.forEach(band => {
+        console.log(`Band: ${band.name}, founded in ${band.yearFormed}`);
+        console.log(band);
+    });
+}
+
+printBands(bands);
+
